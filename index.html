@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style >
+        p{color:rgb(248, 148, 17);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+    }
+    </style>
 </head>
 <body>
     <h1>Hello world</h1>
@@ -18,7 +24,6 @@
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(data => {
-        
         console.log(data)
         for(let i = 0; i<5; i++){
         let another = document.createElement("p");
