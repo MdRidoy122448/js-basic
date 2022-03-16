@@ -13,15 +13,5 @@ function chocolateCalculator(taka){
     }
     console.log(chocolate)
 }
-chocolateCalculator(300)
+chocolateCalculator(350)
 
-
-
-
-echo "# Problem_solving" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/MdRidoy122448/Problem_solving.git
-git push -u origin main
