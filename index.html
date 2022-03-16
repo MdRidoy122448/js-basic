@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+
+    <div class="demo">
+
+    </div>
+
+    <script>
+    var item = document.querySelector(".demo");
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => {
+        
+        console.log(data)
+        for(let i = 0; i<5; i++){
+        let another = document.createElement("p");
+        another.innerHTML = `<span>id :</span>${data[i].id} <span>Name :</span> ${data[i].name} <span>E-mail :</span> ${data[i].email}`;
+        console.log(another)
+        item.appendChild(another)
+        }
+        
+    })
+
+    
+    </script>
+</body>
+</html>
