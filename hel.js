@@ -34,4 +34,4 @@ function main() {
 //11
 
 const wow = Boolean(5>6)
-console.log("wow")
+console.log("ddddddgajljglfgjgfdddd")
